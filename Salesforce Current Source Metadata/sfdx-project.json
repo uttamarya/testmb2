@@ -1,0 +1,9 @@
+{
+  "packageDirectories": [
+    {
+      "path": "output\\MacrobondProd",
+      "default": true
+    }
+  ],
+  "sourceApiVersion": "63.0"
+}

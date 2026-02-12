@@ -1,0 +1,30 @@
+# Salesforce Metadata Extractor Configuration
+# Copy this file to config.yaml and fill in your values.
+# config.yaml is gitignored and will NOT be committed.
+
+# Name of your sandbox/environment. Used as the output folder name
+# and as the sf CLI alias for this org.
+sandbox_name: "MyDevSandbox"
+
+# Salesforce login URL
+# Production / Developer Edition: https://login.salesforce.com
+# Sandbox: https://test.salesforce.com
+login_url: "https://test.salesforce.com"
+
+# Target org username or alias (used to check existing auth and for retrieve).
+# After your first browser login this should match the username you logged in with,
+# or the sandbox_name alias above.
+target_org: "your.email@example.com.sandboxname"
+
+# Path to package.xml (relative to project root)
+package_xml: "package.xml"
+
+# Base output directory (relative to project root)
+output_dir: "output"
+
+# Retrieve settings
+retrieve:
+  # Maximum minutes to wait for the retrieve to complete
+  wait_minutes: 60
+  # Node.js heap size in MB — set to max to handle very large orgs
+  node_heap_mb: 32768

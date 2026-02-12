@@ -1,0 +1,25 @@
+# Salesforce Metadata Extractor Configuration
+# Copy this file to config.yaml and fill in your values.
+# config.yaml is gitignored and will NOT be committed.
+
+# Name of your sandbox/environment. Metadata will be extracted into output/<sandbox_name>/
+sandbox_name: "MacrobondProd"
+
+# Salesforce login URL
+# Production / Developer Edition: https://login.salesforce.com
+# Sandbox: https://test.salesforce.com
+login_url: "https://macrobond.my.salesforce.com/"
+
+# Path to package.xml (relative to project root)
+package_xml: "package.xml"
+
+# Base output directory (relative to project root)
+output_dir: "output"
+
+# Retrieve settings
+retrieve:
+  # Polling interval in seconds when waiting for retrieve to complete
+  poll_interval: 10
+  # Maximum number of polls before timing out
+  max_polls: 180
+  node_heap_mb: 32768
