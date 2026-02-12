@@ -1,0 +1,40 @@
+﻿W/L,Outcome Type,Win or Loss Reasons- (New CRM PickList),Old PickList (for mapping),Definitions,Control Level,Cont/UnCont Definitions
+Loss Reason,Product Strength,Data Coverage Did Not Meet Requirements,Missing Data (Specify in Notes),"Required macroeconomic series, geographies, frequencies, or history were unavailable.",Partially Controllable,"Influenced by data acquisition strategy and roadmap, but rarely fixable in-cycle."
+Loss Reason,Product Strength,Platform Usability or Data Structure Limitations,User interface & Data structure,"Data format, metadata, or organization did not support the client’s workflow.",Controllable,"Directly tied to product design, UX, and enablement."
+Loss Reason,Product Strength,Visualization or Analytical Capabilities Insufficient,Charting & Visualization,"Charting, modeling, or analytical features were insufficient for intended use cases.",Controllable,"Product functionality, roadmap prioritization, and positioning."
+Loss Reason,Product Strength,AI Capabilities Did Not Meet Expectations,,"Customer required AI-driven functionality that was missing, weaker, or less trusted than alternatives.",Controllable,"Feature design, augmentation value, intelligence provided"
+Loss Reason,Technology & Integration,Integration Constraints to other Tools,Interconnectivity with existing tools,"Limited interoperability with internal tools (Excel, Python, BI tools, proprietary systems).",Partially Controllable,"APIs, integrations, security posture can be improved, but client IT policies vary."
+Loss Reason,Technology & Integration,IT Environment Constraints,IT integration issues,"Client IT policies prevented installation, access, or cloud usage.",Partially Controllable,"APIs, integrations, security posture can be improved, but client IT policies vary."
+Loss Reason,Commercial,Insufficient Business Value Relative to Cost,Budget – Insufficient value-add,Customer did not perceive sufficient incremental value to justify purchase.,Controllable,"Sales messaging, use-case framing, ROI articulation."
+Loss Reason,Commercial,Budget or Pricing Constraints,Budget – Expensive vs alternatives,Budget unavailable or pricing exceeded acceptable thresholds.,Partially Controllable,"Pricing, packaging, and deal structure help, but budgets may be fixed."
+Loss Reason,Competitive,Competitive Solution Selected,Alternative solution / competitor response,"Customer chose a competitor, internal solution, or alternative provider.",Partially Controllable,"Competitive positioning matters, but outcomes depend on buyer strategy."
+Loss Reason,Competitive,Internal/Build Solution Preferred,Alternative solution / competitor response,"Customer opted to rely on in-house data, models, or tooling.",Partially Controllable,"Standard terms, data licensing, and legal responsiveness can reduce friction."
+Loss Reason,"Legal, Compliance, Procurement",Legal or Compliance Restrictions,Legal – Compliance,"Data licensing, regulatory, or compliance concerns could not be resolved.",Partially Controllable,"Standard terms, data licensing, and legal responsiveness can reduce friction."
+Loss Reason,"Legal, Compliance, Procurement",Contract Terms not Agreed,Legal – Agreement on terms,"Legal, procurement, or commercial terms stalled or blocked approval.",Partially Controllable,"Standard terms, data licensing, and legal responsiveness can reduce friction."
+Loss Reason,Timing & Org Change,Change in Scope or Priorities,Timing – Due to change in scope,Project objectives changed or were deprioritized.,Uncontrollable,External business dynamics and personnel changes.
+Loss Reason,Timing & Org Change,Organizational Change/User Transfer,User Transfer,"Champion left, team restructured, or ownership changed.",Uncontrollable,External business dynamics and personnel changes.
+Loss Reason,No New Demand,Existing License Coverage,Spare license found,Adequate licenses already available internally.,Uncontrollable,Already satisfied demand; no net-new need.
+Loss Reason,Process/Admin Closure,License Consolidation or Reduction,,Customer reduced overall usage footprint.,Controllable,"Onboarding, customer success, outcomes"
+Loss Reason,Process/Admin Closure,Disqualified- No Valid Opportunity,Disqualified,"Did not meet qualification criteria (authority, need, timing).",Controllable,Qualification rigor and CRM hygiene are internal responsibilities.
+Loss Reason,Process/Admin Closure,Piplein Clean Up,Pipe clean up,Opportunity closed for CRM hygiene or inactivity.,Admin,
+Win Reason,Product Strength,"High-Quality, Well Structured Data","Clean, High-Quality Data & Meta-Data)","Trusted macroeconomic data with strong metadata, consistency, and reliability.",Controllable,"Data sourcing, QA processes, metadata standards."
+Win Reason,Product Strength,Broad & Deep Data Coverage,Width of Data Available,"Extensive coverage across countries, indicators, frequencies, and history.",Partially Controllable,nfluenced by acquisition strategy and roadmap.
+Win Reason,Product Strength,Data Structure and User Interface,User Interface & Data Structure,"Platform was easy to learn, navigate, and use effectively.",Controllable,"UX design, onboarding, and product evolution."
+Win Reason,Product Strength,No Code Analytics,"Simple Analytics, requiring no coding skills",Users could perform analysis and modeling without programming expertise.,Controllable,"Feature design, defaults, templates, training."
+Win Reason,Product Strength,Powerful Visualization and Charting,Charting & Visualization,Visual outputs met professional and presentation-quality standards.,Controllable,"Charting engine, styling, export options."
+Win Reason,Product Strength,Operational Efficiency and Workflow Improvement,"Ease of update, removal of workarounds","Platform reduced manual work, errors, and legacy workarounds.",Controllable,"Automation, update mechanisms, and workflow tooling."
+Win Reason,Product Strength,AI-Enabled Productivity or Insight,,"AI features materially improved speed, insight generation, or usability compared to alternatives.",Controllable,"Feature design, augmentation value, intelligence provided"
+Win Reason,Technology & Integration,Integration with Existing Tools and Workflows,Interconnectivity with existing tools,"Fit seamlessly into Excel, Python, BI tools, or internal systems.",Partially Controllable,"APIs, connectors, documentation, but depends on client stack."
+Win Reason,Technology & Integration,"Collaboration, Sharing and Access Model","Sharing of finished work, Platform access & storage","Enabled easy sharing, access control, and reuse across teams.",Controllable,"Licensing, permissions, sharing features."
+Win Reason,Commercial,Compelling Value for Price,"Pricing – compelling value-add, Pricing – cheaper vs alternatives)",Pricing was justified by value delivered relative to alternatives.,Controllable,"Pricing, packaging, and value articulation."
+Win Reason,Competitive,Adopted as a Core Team Platform,Need Macrobond as central tool in the team,"Platform became the standard, central macroeconomic tool for the team.",Controllable,"Product breadth, adoption strategy, and account expansion."
+,,,,,,
+,,,,,,
+Add a field,Did AI Influence the Decision?,"Yes - Primary Driver, Yes- Secondary Driver, No",,,,
+,,,,,,
+,,,,,,
+,Outcome Type,Control Level,,,,
+Layout,Win Reason,Win Reason Note,,,,
+,Loss Reason,Loss Reason Note,,,,
+,Cancellation Reason,Cancellation Reason Note,,,,
+,Did AI Influence the Deal?,,,,,
