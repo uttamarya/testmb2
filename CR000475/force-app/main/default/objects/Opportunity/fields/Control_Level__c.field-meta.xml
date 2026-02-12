@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Control_Level__c</fullName>
+    <description>CR000475: Auto-derived from Win Reason or Loss Reason. Indicates whether the win or loss is Controllable, Partially Controllable, or Uncontrollable by the organization.</description>
+    <externalId>false</externalId>
+    <formula>IF(OR(
+ISPICKVAL(Win_Reason__c, &quot;High-Quality, Well Structured Data&quot;),
+ISPICKVAL(Win_Reason__c, &quot;Data Structure and User Interface&quot;),
+ISPICKVAL(Win_Reason__c, &quot;No Code Analytics&quot;),
+ISPICKVAL(Win_Reason__c, &quot;Powerful Visualization and Charting&quot;),
+ISPICKVAL(Win_Reason__c, &quot;Operational Efficiency and Workflow Improvement&quot;),
+ISPICKVAL(Win_Reason__c, &quot;AI-Enabled Productivity or Insight&quot;),
+ISPICKVAL(Win_Reason__c, &quot;Collaboration, Sharing and Access Model&quot;),
+ISPICKVAL(Win_Reason__c, &quot;Compelling Value for Price&quot;),
+ISPICKVAL(Win_Reason__c, &quot;Adopted as a Core Team Platform&quot;),
+ISPICKVAL(Loss_Reason__c, &quot;Platform Usability or Data Structure Limitations&quot;),
+ISPICKVAL(Loss_Reason__c, &quot;Visualization or Analytical Capabilities Insufficient&quot;),
+ISPICKVAL(Loss_Reason__c, &quot;AI Capabilities Did Not Meet Expectations&quot;),
+ISPICKVAL(Loss_Reason__c, &quot;Insufficient Business Value Relative to Cost&quot;),
+ISPICKVAL(Loss_Reason__c, &quot;License Consolidation or Reduction&quot;),
+ISPICKVAL(Loss_Reason__c, &quot;Disqualified - No Valid Opportunity&quot;)
+), &quot;Controllable&quot;,
+
+IF(OR(
+ISPICKVAL(Win_Reason__c, &quot;Broad and Deep Data Coverage&quot;),
+ISPICKVAL(Win_Reason__c, &quot;Integration with Existing Tools and Workflows&quot;),
+ISPICKVAL(Loss_Reason__c, &quot;Data Coverage Did Not Meet Requirements&quot;),
+ISPICKVAL(Loss_Reason__c, &quot;Integration Constraints to other Tools&quot;),
+ISPICKVAL(Loss_Reason__c, &quot;IT Environment Constraints&quot;),
+ISPICKVAL(Loss_Reason__c, &quot;Budget or Pricing Constraints&quot;),
+ISPICKVAL(Loss_Reason__c, &quot;Competitive Solution Selected&quot;),
+ISPICKVAL(Loss_Reason__c, &quot;Internal/Build Solution Preferred&quot;),
+ISPICKVAL(Loss_Reason__c, &quot;Legal or Compliance Restrictions&quot;),
+ISPICKVAL(Loss_Reason__c, &quot;Contract Terms not Agreed&quot;)
+), &quot;Partially Controllable&quot;,
+
+IF(OR(
+ISPICKVAL(Loss_Reason__c, &quot;Change in Scope or Priorities&quot;),
+ISPICKVAL(Loss_Reason__c, &quot;Organizational Change/User Transfer&quot;),
+ISPICKVAL(Loss_Reason__c, &quot;Existing License Coverage&quot;)
+), &quot;Uncontrollable&quot;,
+
+IF(
+ISPICKVAL(Loss_Reason__c, &quot;Pipeline Clean Up&quot;),
+&quot;Admin&quot;,
+
+NULL))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Auto-populated based on the selected Win or Loss Reason. Classifies whether the outcome was Controllable, Partially Controllable, or Uncontrollable.</inlineHelpText>
+    <label>Control Level</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

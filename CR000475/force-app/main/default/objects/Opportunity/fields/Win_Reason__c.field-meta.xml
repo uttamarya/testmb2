@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Win_Reason__c</fullName>
+    <label>Win Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>High-Quality, Well Structured Data</fullName>
+                <default>false</default>
+                <label>High-Quality, Well Structured Data</label>
+            </value>
+            <value>
+                <fullName>Broad and Deep Data Coverage</fullName>
+                <default>false</default>
+                <label>Broad &amp; Deep Data Coverage</label>
+            </value>
+            <value>
+                <fullName>Data Structure and User Interface</fullName>
+                <default>false</default>
+                <label>Data Structure and User Interface</label>
+            </value>
+            <value>
+                <fullName>No Code Analytics</fullName>
+                <default>false</default>
+                <label>No Code Analytics</label>
+            </value>
+            <value>
+                <fullName>Powerful Visualization and Charting</fullName>
+                <default>false</default>
+                <label>Powerful Visualization and Charting</label>
+            </value>
+            <value>
+                <fullName>Operational Efficiency and Workflow Improvement</fullName>
+                <default>false</default>
+                <label>Operational Efficiency and Workflow Improvement</label>
+            </value>
+            <value>
+                <fullName>AI-Enabled Productivity or Insight</fullName>
+                <default>false</default>
+                <label>AI-Enabled Productivity or Insight</label>
+            </value>
+            <value>
+                <fullName>Integration with Existing Tools and Workflows</fullName>
+                <default>false</default>
+                <label>Integration with Existing Tools and Workflows</label>
+            </value>
+            <value>
+                <fullName>Collaboration, Sharing and Access Model</fullName>
+                <default>false</default>
+                <label>Collaboration, Sharing and Access Model</label>
+            </value>
+            <value>
+                <fullName>Compelling Value for Price</fullName>
+                <default>false</default>
+                <label>Compelling Value for Price</label>
+            </value>
+            <value>
+                <fullName>Adopted as a Core Team Platform</fullName>
+                <default>false</default>
+                <label>Adopted as a Core Team Platform</label>
+            </value>
+            <value>
+                <fullName>Charting and Visualization</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Charting &amp; Visualization</label>
+            </value>
+            <value>
+                <fullName>Clean, High-Quality Data and Meta-Data</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Clean, High-Quality Data &amp; Meta-Data</label>
+            </value>
+            <value>
+                <fullName>Ease of update, removal of workarounds</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ease of update, removal of workarounds</label>
+            </value>
+            <value>
+                <fullName>Interconnectivity with existing tools</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Interconnectivity with existing tools</label>
+            </value>
+            <value>
+                <fullName>Need Macrobond as central tool in the team</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Need Macrobond as central tool in the team</label>
+            </value>
+            <value>
+                <fullName>Platform access &amp; storage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Platform access &amp; storage</label>
+            </value>
+            <value>
+                <fullName>Pricing – cheaper vs alternatives</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pricing - cheaper vs alternatives</label>
+            </value>
+            <value>
+                <fullName>Pricing - compelling value-add</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pricing - compelling value-add</label>
+            </value>
+            <value>
+                <fullName>Sharing of finished work</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sharing of finished work</label>
+            </value>
+            <value>
+                <fullName>Simple Analytics, requiring no coding skills</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Simple Analytics, requiring no coding skills</label>
+            </value>
+            <value>
+                <fullName>User interface and Data structure</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>User interface &amp; Data structure</label>
+            </value>
+            <value>
+                <fullName>Width of Data Available</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Width of Data Available</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>High-Quality, Well Structured Data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Broad and Deep Data Coverage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Data Structure and User Interface</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>No Code Analytics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Powerful Visualization and Charting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Operational Efficiency and Workflow Improvement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>AI-Enabled Productivity or Insight</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Integration with Existing Tools and Workflows</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Collaboration, Sharing and Access Model</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Compelling Value for Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Adopted as a Core Team Platform</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

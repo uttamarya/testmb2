@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>q2c_Cancellation</fullName>
+    <active>true</active>
+    <businessProcess>Q2C Cancellation</businessProcess>
+    <description>Create this Opportunity for Cancellations.</description>
+    <label>Cancellation</label>
+    <picklistValues>
+        <picklist>AI_Influence_Decision__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes - Primary Driver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes - Secondary Driver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Booking_Type__c</picklist>
+        <values>
+            <fullName>Churn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downsell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Decrease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Increase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upsell</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cancellation_Reason__c</picklist>
+        <values>
+            <fullName>Business closing down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conversion requirements not met</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data requirements not met</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Displaced by competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ease of use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed to integrate to workflow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inadequate training%2Fengagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lacking functionalities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replaced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User misfit%2Fmigration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workflow changed%2Fdiscontinued</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Competitive_Displacement_Program__c</picklist>
+        <values>
+            <fullName>Bloomberg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Datastream</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Conversion_Format__c</picklist>
+        <values>
+            <fullName>E2E %28Excel to Excel%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E2M %28Excel to Macrobond%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NE %28Non-Excel%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Conversion_Requested__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Conversion_Type__c</picklist>
+        <values>
+            <fullName>Onboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Churn_Loss_Code__c</picklist>
+        <values>
+            <fullName>Adoption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bugs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feature Ideas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Launch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Controllable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relationship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sentiment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Data_Provider_s_to_Replaced__c</picklist>
+        <values>
+            <fullName>Bloomberg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Datastream</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EcoWin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Factset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Insight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Displacement_Type__c</picklist>
+        <values>
+            <fullName>Full</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stretch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upside</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Free_Trial_Requested__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>In_Path_Quarter__c</picklist>
+        <values>
+            <fullName>Q1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LID__DeliveryInstallationStatus__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yet to begin</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Content Influencer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event %2F Conference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LinkedIn Sales Navigator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open%3AFactSet Marketplace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Paid Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Prospecting Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third party campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Source_Override__c</picklist>
+        <values>
+            <fullName>Content Influencer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event %2F Conference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LinkedIn Sales Navigator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open%3AFactSet Marketplace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic Social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid social</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Marketing Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Prospecting Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third party campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zoominfo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Source_Sub_Type__c</picklist>
+        <values>
+            <fullName>Audrey Wang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BSMART</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Baidu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bilibili</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blast Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bloomberg Research Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cold Call %28SDR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cold Call %28Sales%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Core</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Datafeed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eagle Alpha</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email %28SDR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex-Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex-Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Factsheet Download</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Influencer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LinkedIn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linkedin product page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Livewire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M2SD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Macrobond App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neudata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oliver Loutsenko</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proprietary Conference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proprietary Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RTP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Prospecting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Savvy Investor Platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Survey Download</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The wire China</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party Conference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third party campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twitter Japan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Viewer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website COTW Sign Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website Contact Us</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website Demo Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website Macrobond Viewer%2F Case Study</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wechat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yahoo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>l%27Agefi</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loss_Reason__c</picklist>
+        <values>
+            <fullName>AI Capabilities Did Not Meet Expectations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Budget or Pricing Constraints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change in Scope or Priorities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitive Solution Selected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Terms not Agreed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Coverage Did Not Meet Requirements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disqualified - No Valid Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing License Coverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Environment Constraints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient Business Value Relative to Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration Constraints to other Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal%2FBuild Solution Preferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal or Compliance Restrictions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License Consolidation or Reduction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organizational Change%2FUser Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline Clean Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform Usability or Data Structure Limitations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visualization or Analytical Capabilities Insufficient</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Manager_Forecast_Category__c</picklist>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stretch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upside</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_Governance_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Re_open_Quote__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Renewal_Model__c</picklist>
+        <values>
+            <fullName>No Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard %28Auto Renewal%29</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Research_System__c</picklist>
+        <values>
+            <fullName>Bloomberg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital IQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecowin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Excel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Factset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feri</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haver Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IHS Global Insight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infront</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moody%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Known</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oxford Economics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refinitiv Eikon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YCharts</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Play__c</picklist>
+        <values>
+            <fullName>Data Package Developed Markets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Package Emerging markets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Package Essential Macro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Region__c</picklist>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Americas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Subregion__c</picklist>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Americas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mid Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nordics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Salvage_Method__c</picklist>
+        <values>
+            <fullName>Executive Escalation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Feature Addition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Concession</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Downgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Term Reduction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Value Demonstration</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Contract merge%2Ftransfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forecasted Cancellation</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Full Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precautionary Cancellation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Win_Reason__c</picklist>
+        <values>
+            <fullName>AI-Enabled Productivity or Insight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adopted as a Core Team Platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broad and Deep Data Coverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collaboration%2C Sharing and Access Model</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compelling Value for Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Structure and User Interface</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High-Quality%2C Well Structured Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integration with Existing Tools and Workflows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Code Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operational Efficiency and Workflow Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Powerful Visualization and Charting</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

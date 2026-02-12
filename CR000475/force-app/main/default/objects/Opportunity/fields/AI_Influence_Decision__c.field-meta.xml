@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AI_Influence_Decision__c</fullName>
+    <description>CR000475: Indicates whether AI capabilities (ours or a competitor&apos;s) played a role in the customer&apos;s decision.</description>
+    <inlineHelpText>Indicate whether AI capabilities (ours or a competitor&apos;s) played a role in the customer&apos;s decision.</inlineHelpText>
+    <label>Did AI Influence the Decision?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes - Primary Driver</fullName>
+                <default>false</default>
+                <label>Yes - Primary Driver</label>
+            </value>
+            <value>
+                <fullName>Yes - Secondary Driver</fullName>
+                <default>false</default>
+                <label>Yes - Secondary Driver</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Yes - Primary Driver</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>Yes - Secondary Driver</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Won</controllingFieldValue>
+            <valueName>No</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,25 @@
+Field,Win_Reason_Old__c,Win_Reason__c,Mapping Confidence,Notes
+Win_Reason__c,User interface and Data structure,Data Structure and User Interface,Exact,Requirements doc Section 7
+Win_Reason__c,"Clean, High-Quality Data and Meta-Data","High-Quality, Well Structured Data",Exact,Requirements doc Section 7
+Win_Reason__c,Width of Data Available,Broad and Deep Data Coverage,Exact,Requirements doc Section 7
+Win_Reason__c,"Simple Analytics, requiring no coding skills",No Code Analytics,Exact,Requirements doc Section 7
+Win_Reason__c,Charting and Visualization,Powerful Visualization and Charting,Exact,Requirements doc Section 7
+Win_Reason__c,"Ease of update, removal of workarounds",Operational Efficiency and Workflow Improvement,Exact,Requirements doc Section 7
+Win_Reason__c,Platform access & storage,"Collaboration, Sharing and Access Model",Exact,Combined with Sharing of finished work
+Win_Reason__c,Interconnectivity with existing tools,Integration with Existing Tools and Workflows,Exact,Requirements doc Section 7
+Win_Reason__c,Sharing of finished work,"Collaboration, Sharing and Access Model",Exact,Combined with Platform access & storage
+Win_Reason__c,Pricing - compelling value-add,Compelling Value for Price,Exact,Combined with Pricing cheaper vs alternatives
+Win_Reason__c,Pricing – cheaper vs alternatives,Compelling Value for Price,Exact,Note: em-dash in old value
+Win_Reason__c,Need Macrobond as central tool in the team,Adopted as a Core Team Platform,Exact,Requirements doc Section 7
+Win_Reason__c,Data Structure and User Interface,Data Structure and User Interface,Exact,Requirements doc Section 7
+Win_Reason__c,"High-Quality, Well Structured Data","High-Quality, Well Structured Data",Exact,Requirements doc Section 7
+Win_Reason__c,Broad and Deep Data Coverage,Broad and Deep Data Coverage,Exact,Requirements doc Section 7
+Win_Reason__c,No Code Analytics,No Code Analytics,Exact,Requirements doc Section 7
+Win_Reason__c,Powerful Visualization and Charting,Powerful Visualization and Charting,Exact,Requirements doc Section 7
+Win_Reason__c,Operational Efficiency and Workflow Improvement,Operational Efficiency and Workflow Improvement,Exact,Requirements doc Section 7
+Win_Reason__c,"Collaboration, Sharing and Access Model","Collaboration, Sharing and Access Model",Exact,Combined with Sharing of finished work
+Win_Reason__c,Integration with Existing Tools and Workflows,Integration with Existing Tools and Workflows,Exact,Requirements doc Section 7
+Win_Reason__c,"Collaboration, Sharing and Access Model","Collaboration, Sharing and Access Model",Exact,Combined with Platform access & storage
+Win_Reason__c,Compelling Value for Price,Compelling Value for Price,Exact,Combined with Pricing cheaper vs alternatives
+Win_Reason__c,Compelling Value for Price,Compelling Value for Price,Exact,Note: em-dash in old value
+Win_Reason__c,Adopted as a Core Team Platform,Adopted as a Core Team Platform,Exact,Requirements doc Section 7

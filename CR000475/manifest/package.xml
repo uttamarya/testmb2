@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>CR000475 - Win/Loss Reason Revamp FY26</description>
+    <types>
+        <members>Opportunity.Win_Reason__c</members>
+        <members>Opportunity.Loss_Reason__c</members>
+        <members>Opportunity.Outcome_Type__c</members>
+        <members>Opportunity.Control_Level__c</members>
+        <members>Opportunity.AI_Influence_Decision__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Opportunity.q2c_New_Business</members>
+        <members>Opportunity.q2c_Renewal</members>
+        <members>Opportunity.q2c_Upsell</members>
+        <members>Opportunity.q2c_Cancellation</members>
+        <name>RecordType</name>
+    </types>
+     <types>
+        <members>Opportunity-Q2C New Business</members>
+        <members>Opportunity-Q2C Renewal</members>
+        <members>Opportunity-Q2C Upsell</members>
+        <members>Opportunity-Q2C Cancellation</members>
+        <name>Layout</name>
+    </types>
+    <version>65.0</version>
+</Package>

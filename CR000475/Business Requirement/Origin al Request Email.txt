@@ -1,0 +1,61 @@
+
+________________________________________
+From: Oliver Vander Horn <oliver.vanderhorn@macrobond.com>
+Sent: 02 January 2026 15:11
+To: Twan Van Der Loo <twan.vanderloo@macrobond.com>; Uttam Arya <uttam.arya@macrobond.com>
+Subject: FW: Win Loss Updates in FY26 
+ 
+Hey guys, Happy New Year! 
+How are we doing on capacity? I know we are focused on metrics and cleanup still (lately asked for Gross and Net ACV to be calculated fields in SF), and there’s a few smaller asks I think we were trying to fit in (Marisa had one if I remember), but wondering if modifying these win/loss codes is something we should tackle? 
+
+Generally, no changes that may impact CPQ/numbers - we have weekly reporting outputs and are under tight deadlines to get all reporting done by January 21st. 
+
+Seems like a good time to tackle to clean the board on the smaller low risk items.
+
+From: Lauren Wilverding <lauren.wilverding@macrobond.com>
+Date: Monday, December 29, 2025 at 1:41 PM
+To: Annabel Brooks <annabel.brooks@macrobond.com>, Oliver Vander Horn <oliver.vanderhorn@macrobond.com>
+Subject: FW: Win Loss Updates in FY26
+Hi both,
+ 
+No rush on this but wanted to put it on your radar. Steph sent over her proposed list of Win and Loss codes, with added details/hierarchy thoughts. I asked a couple of follow up questions that she responded to.  Added that extra context below. My questions in green, her answers in red.
+ 
+I know this was on your list of goals to revamp with Alfred, @Annabel, and I know we need time to get these into the system properly @Oliver, so take a look and let me know if this is a February thing (or later). I told her January was basically 1) comp, 2) territories, and 3) switching products dedicated, but that we could look at this after.
+ 
+Thanks,
+ 
+Lauren Wilverding
+Chief Financial Officer
+p: 1.619.504.4075
+lauren.wilverding@macrobond.com
+California, USA (PST)
+ 
+ 
+ 
+From: Steph Covert <steph.covert@macrobond.com>
+Sent: Monday, December 29, 2025 5:55 AM
+To: Lauren Wilverding <lauren.wilverding@macrobond.com>; Matt Cox <matt.cox@macrobond.com>
+Subject: Win Loss Updates in FY26
+ 
+Hi both,
+ 
+Before we have Annabel dive into the Win Loss Reason updates, I thought it would be valuable to share some feedback on what I envision for the reporting. When it comes to Win Loss reporting, I think of it in layers:
+ 
+•	First: the Outcome type, which represents the top level primary categories that can be summarized for board level review. These are hard-coded based on the win or loss reason.
+•	Second: the Win Loss Reasons, which serve as the more detailed reason codes that the rep selects when closing the opportunity.
+•	Third, the Control level, which indicates whether the win or loss is Controllable, Partially Controllable, or Non-Controllable. This is also hard-coded to the reasons but provides a comprehensive picture over time of whether the market is influencing our wins or if our product or sales execution is playing a role.
+•	Additionally, having the Win or Loss detail notes that offer further context around the win or loss
+ 
+You call it out below, but just to confirm - the reps would choose the Win/Loss Reason in column C only and then the rest of the columns data would automatically populate (Outcome Type, Definitions, Control Level and Control/Uncontrol Definitions)?That is correct. The definitions could just be held offline, figured we would need them in some due diligence document in the future. So Outcome Type, Control Level would auto populate based on reason. You read is correct.
+ 
+Do we want to make all of the surrounding fields visible in SF to the rep, or just the Definitions where the rest of the data is visible to leadership and Ops? I could go either way, but these are more operational and roll up fields so they don’t need to be visible. Unless its too much work to create new profiles for these to be hidden.
+ 
+I would also like to introduce another field: Did AI Influence the Decision? I believe it's essential to start identifying if AI is influencing our wins or losses. This will become increasingly important as we begin to share our vision and launch AI related features.
+ 
+In the attached you will see my recommended updates to each of these levels.  Am ok if they change but wanted to put my thoughts down why there was some quiet time to think. This is an area that we can be much more disciplined on, so hoping to see if we can clean up Q4 and start fresh in Q1. If we can clean up FY25 prior to the board meeting that would be great, but unsure if that is doable. At a minimum I think we should have Q425 cleaned up. Let me know what you think.
+ 
+I haven’t shared this with Annabel yet, @Lauren Wilverding I assumed you would share it with her when you are ready.
+ 
+Thanks
+Steph
+ 

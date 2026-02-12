@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loss_Reason__c</fullName>
+    <label>Loss Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Data Coverage Did Not Meet Requirements</fullName>
+                <default>false</default>
+                <label>Data Coverage Did Not Meet Requirements</label>
+            </value>
+            <value>
+                <fullName>Platform Usability or Data Structure Limitations</fullName>
+                <default>false</default>
+                <label>Platform Usability or Data Structure Limitations</label>
+            </value>
+            <value>
+                <fullName>Visualization or Analytical Capabilities Insufficient</fullName>
+                <default>false</default>
+                <label>Visualization or Analytical Capabilities Insufficient</label>
+            </value>
+            <value>
+                <fullName>AI Capabilities Did Not Meet Expectations</fullName>
+                <default>false</default>
+                <label>AI Capabilities Did Not Meet Expectations</label>
+            </value>
+            <value>
+                <fullName>Integration Constraints to other Tools</fullName>
+                <default>false</default>
+                <label>Integration Constraints to other Tools</label>
+            </value>
+            <value>
+                <fullName>IT Environment Constraints</fullName>
+                <default>false</default>
+                <label>IT Environment Constraints</label>
+            </value>
+            <value>
+                <fullName>Insufficient Business Value Relative to Cost</fullName>
+                <default>false</default>
+                <label>Insufficient Business Value Relative to Cost</label>
+            </value>
+            <value>
+                <fullName>Budget or Pricing Constraints</fullName>
+                <default>false</default>
+                <label>Budget or Pricing Constraints</label>
+            </value>
+            <value>
+                <fullName>Competitive Solution Selected</fullName>
+                <default>false</default>
+                <label>Competitive Solution Selected</label>
+            </value>
+            <value>
+                <fullName>Internal/Build Solution Preferred</fullName>
+                <default>false</default>
+                <label>Internal/Build Solution Preferred</label>
+            </value>
+            <value>
+                <fullName>Legal or Compliance Restrictions</fullName>
+                <default>false</default>
+                <label>Legal or Compliance Restrictions</label>
+            </value>
+            <value>
+                <fullName>Contract Terms not Agreed</fullName>
+                <default>false</default>
+                <label>Contract Terms not Agreed</label>
+            </value>
+            <value>
+                <fullName>Change in Scope or Priorities</fullName>
+                <default>false</default>
+                <label>Change in Scope or Priorities</label>
+            </value>
+            <value>
+                <fullName>Organizational Change/User Transfer</fullName>
+                <default>false</default>
+                <label>Organizational Change/User Transfer</label>
+            </value>
+            <value>
+                <fullName>Existing License Coverage</fullName>
+                <default>false</default>
+                <label>Existing License Coverage</label>
+            </value>
+            <value>
+                <fullName>License Consolidation or Reduction</fullName>
+                <default>false</default>
+                <label>License Consolidation or Reduction</label>
+            </value>
+            <value>
+                <fullName>Disqualified - No Valid Opportunity</fullName>
+                <default>false</default>
+                <label>Disqualified - No Valid Opportunity</label>
+            </value>
+            <value>
+                <fullName>Pipeline Clean Up</fullName>
+                <default>false</default>
+                <label>Pipeline Clean Up</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Data Coverage Did Not Meet Requirements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Platform Usability or Data Structure Limitations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Visualization or Analytical Capabilities Insufficient</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>AI Capabilities Did Not Meet Expectations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Integration Constraints to other Tools</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>IT Environment Constraints</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Insufficient Business Value Relative to Cost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Budget or Pricing Constraints</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Competitive Solution Selected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Internal/Build Solution Preferred</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Legal or Compliance Restrictions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Contract Terms not Agreed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Change in Scope or Priorities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Organizational Change/User Transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Existing License Coverage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>License Consolidation or Reduction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Disqualified - No Valid Opportunity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Pipeline Clean Up</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

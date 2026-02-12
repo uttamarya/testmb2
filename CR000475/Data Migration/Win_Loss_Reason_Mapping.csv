@@ -1,0 +1,30 @@
+Field,Old Value (API/fullName stored in DB),New Value (API/fullName),Mapping Confidence,Notes
+Win_Reason__c,User interface and Data structure,Data Structure and User Interface,Exact,Requirements doc Section 7
+Win_Reason__c,"Clean, High-Quality Data and Meta-Data","High-Quality, Well Structured Data",Exact,Requirements doc Section 7
+Win_Reason__c,Width of Data Available,Broad and Deep Data Coverage,Exact,Requirements doc Section 7
+Win_Reason__c,"Simple Analytics, requiring no coding skills",No Code Analytics,Exact,Requirements doc Section 7
+Win_Reason__c,Charting and Visualization,Powerful Visualization and Charting,Exact,Requirements doc Section 7
+Win_Reason__c,"Ease of update, removal of workarounds",Operational Efficiency and Workflow Improvement,Exact,Requirements doc Section 7
+Win_Reason__c,Platform access & storage,"Collaboration, Sharing and Access Model",Exact,Combined with Sharing of finished work
+Win_Reason__c,Interconnectivity with existing tools,Integration with Existing Tools and Workflows,Exact,Requirements doc Section 7
+Win_Reason__c,Sharing of finished work,"Collaboration, Sharing and Access Model",Exact,Combined with Platform access & storage
+Win_Reason__c,Pricing - compelling value-add,Compelling Value for Price,Exact,Combined with Pricing cheaper vs alternatives
+Win_Reason__c,Pricing – cheaper vs alternatives,Compelling Value for Price,Exact,Note: em-dash in old value
+Win_Reason__c,Need Macrobond as central tool in the team,Adopted as a Core Team Platform,Exact,Requirements doc Section 7
+Loss_Reason__c,Missing Data,Data Coverage Did Not Meet Requirements,Exact,Requirements doc Section 7
+Loss_Reason__c,User interface and Data structure,Platform Usability or Data Structure Limitations,Exact,Requirements doc Section 7
+Loss_Reason__c,Charting and Visualisation,Visualization or Analytical Capabilities Insufficient,Exact,Note: old value has British spelling (Visualisation)
+Loss_Reason__c,Interconnectivity with existing tools,Integration Constraints to other Tools,Exact,Requirements doc Section 7
+Loss_Reason__c,Platform access & storage,Platform Usability or Data Structure Limitations,Inferred,No explicit mapping in requirements - closest platform-related match
+Loss_Reason__c,Insufficient value-add,Insufficient Business Value Relative to Cost,Exact,Requirements doc Section 7
+Loss_Reason__c,Too expensive vs alternatives,Budget or Pricing Constraints,Exact,Requirements doc Section 7
+Loss_Reason__c,IT integration issues,IT Environment Constraints,Exact,Requirements doc Section 7
+Loss_Reason__c,Compliance,Legal or Compliance Restrictions,Exact,Requirements doc Section 7
+Loss_Reason__c,Agreement on terms,Contract Terms not Agreed,Exact,Requirements doc Section 7
+Loss_Reason__c,Due to change in scope,Change in Scope or Priorities,Exact,Requirements doc Section 7
+Loss_Reason__c,Alternative solution/competitor response,Competitive Solution Selected,MANUAL REVIEW,"Maps to TWO values: Competitive Solution Selected OR Internal/Build Solution Preferred. Default to Competitive Solution Selected. Flag for manual review."
+Loss_Reason__c,User Transfer,Organizational Change/User Transfer,Exact,Requirements doc Section 7
+Loss_Reason__c,Spare license found,Existing License Coverage,Exact,Requirements doc Section 7
+Loss_Reason__c,License saved,License Consolidation or Reduction,Inferred,No explicit mapping - closest license-related match
+Loss_Reason__c,Disqualified,Disqualified - No Valid Opportunity,Exact,Requirements doc Section 7
+Loss_Reason__c,Pipe clean up,Pipeline Clean Up,Exact,Requirements doc Section 7

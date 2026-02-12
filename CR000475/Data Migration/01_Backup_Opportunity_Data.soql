@@ -1,0 +1,84 @@
+-- ============================================================================
+-- CR000475 - Win/Loss Reason Revamp - BACKUP QUERY
+-- ============================================================================
+-- Run this query BEFORE migration to create a full backup of all Opportunity
+-- records that have Win or Loss Reason values. Export results via Data Loader
+-- or Workbench to CSV and store securely.
+--
+-- Scope: All FY25 opportunities (CloseDate in 2025)
+--        plus any still-open opportunities with old reason values
+-- ============================================================================
+
+-- STEP 1: Full backup of all Opportunities with Win/Loss Reason data (FY25+)
+-- Export this to: CR000475_Backup_WinLoss_Full_YYYYMMDD.csv
+
+SELECT
+    Id,
+    Name,
+    AccountId,
+    Account.Name,
+    OwnerId,
+    Owner.Name,
+    RecordType.DeveloperName,
+    StageName,
+    CloseDate,
+    Amount,
+    Win_Reason__c,
+    Loss_Reason__c,
+    Cancellation_Reason__c,
+    Win_Reason_Note__c,
+    Loss_Reason_Note__c,
+    Cancellation_Reason_Note__c,
+    Type,
+    LeadSource,
+    ForecastCategoryName,
+    IsClosed,
+    IsWon,
+    CreatedDate,
+    LastModifiedDate
+FROM Opportunity
+WHERE (
+    Win_Reason__c != null
+    OR Loss_Reason__c != null
+)
+AND CloseDate >= 2025-01-01
+ORDER BY CloseDate DESC
+
+
+-- STEP 2: Count records by old Win Reason values (pre-migration audit)
+-- Run in Developer Console or Workbench
+
+SELECT Win_Reason__c, COUNT(Id) cnt
+FROM Opportunity
+WHERE Win_Reason__c != null
+AND CloseDate >= 2025-01-01
+GROUP BY Win_Reason__c
+ORDER BY Win_Reason__c
+
+
+-- STEP 3: Count records by old Loss Reason values (pre-migration audit)
+
+SELECT Loss_Reason__c, COUNT(Id) cnt
+FROM Opportunity
+WHERE Loss_Reason__c != null
+AND CloseDate >= 2025-01-01
+GROUP BY Loss_Reason__c
+ORDER BY Loss_Reason__c
+
+
+-- STEP 4: Identify "Alternative solution/competitor response" records
+-- that need MANUAL REVIEW (maps to two possible new values)
+-- Export this list for Steph/Oliver to review individually
+
+SELECT
+    Id,
+    Name,
+    Account.Name,
+    Owner.Name,
+    CloseDate,
+    Loss_Reason__c,
+    Loss_Reason_Note__c
+FROM Opportunity
+WHERE Loss_Reason__c = 'Alternative solution/competitor response'
+AND CloseDate >= 2025-01-01
+ORDER BY CloseDate DESC
